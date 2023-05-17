@@ -91,9 +91,8 @@ n.h=the shortpath frome source to dest.
  and for all line their neighbor can be or from one line befor or from one line after and the edge has 2 capaity this is consistance
  ## All the algorithm give a optimalic path.
  ## How to run
-   go to main file and run.
+###Go to main file and run.
 ![image](https://github.com/talStamker/GraphAlgotithems/assets/89009470/0f1df3b3-76a3-4387-bedb-2d63fe4d2073)
 
-   
-   
-  איקר
+###You will get it:
+	
