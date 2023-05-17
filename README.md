@@ -1,7 +1,7 @@
 # GraphAlgotithems
 ## classes:
 ### Node
-####elesments:
+#### elesments:
 * missionaries-The number of missionaries in left side.
 * cannibals-The number of cannibals in left side.
 * side-the Side of boat in that situation on the left side.
@@ -11,7 +11,7 @@ They will be just the nodes who legal to get them
 That is to say neighbor will be one in which the number of missionaries does not decrease from the number of cannibals and also his father will observe this rule, and that the transition between his father and him is the result of adding / subtracting respectively to the side (for 1 minus 0 plus) of the legal vectors (created from the restriction on the boat that can 1 or 2 but at least 1) which are <1,0,1,>, <0,1,1,>,<1,1,1>,<2,0,1>,<0,2,1>.
 *	father- His father.
 * h- used in GFS as heuristics, and in A* as f(n)=heuristics+result fromshort path from source to dest
-#####fanction:
+##### fanction:
 *	public void addNeighbor(Node n) -Add son to the node
 *	public int compareTo(Node n) - help for pQue in graph to order the node in the queue
 ### Graph
@@ -20,7 +20,7 @@ That is to say neighbor will be one in which the number of missionaries does not
 * vectors - Vectors who help us find the neighbors of each node in    nodes.
 * pQueue - Help us use priority pueue who sort by node.h in algorithms: DIJKSTRA, GBFS, A* 
 * maxNumOfEdge- The nux num of age in case full graph
-####constructors:
+#### constructors:
 1.	public Graph() - Creates the node without h element and update for each node his neighbors.(we call him in BFS and IDDFS)
 2.	public Graph(Node source, Node dest) - use in GBFS
     Because GBFS wants find the shortest path in number of edges, we can assume every edge in capacity 1.
@@ -43,7 +43,7 @@ That is to say neighbor will be one in which the number of missionaries does not
 	  H2=i-high
 	  else
 	  H2=arrayOfH[i].
-#####fanction:
+##### fanction:
 * public void theAddNeighbors(Node n)- get Node n and update him after it calculate n + vectors[i] for all i and checks the neighbor legal by all the rules (in 
 Node explenation)
 * public void theDiffNeighbors(Node n) - get Node n and update him after it calculate n - vectors[i] for all i and checks the neighbor legal by all the rules (in 
@@ -54,11 +54,11 @@ n.h=the shortpath frome source to dest.
 *	public void clearVisitedNodes()- clear visited vertecs to the next algorithem
 *	public void getPath(ArrayList<Node> path, Node neightbor) - update path to the path from root(source) to neighbor
 ### GraphAlgorithms- extends Graph
-####elesments:
+#### elesments:
   no element
-####constructors:
+#### constructors:
 3 constructor who call the 3 constructor in Graph respectively.
-#####fanction:
+##### fanction:
 *	public int BFS(ArrayList<Node> path, Node n, Node dest)- find shortest path by edges in a way of pass by degree
 * private int DLS(ArrayList<Node> path, Node source, Node dest, int limit, int counter)-do DSL (like DFS  but from the last) from source to dest but if it doesent find it eliminate by limit
 *	public int IDDFS(ArrayList<Node> path, Node n, Node dest)- find shortest path by edges in a way of pass by deap high times
