@@ -75,18 +75,18 @@ n.h=the shortpath frome source to dest.
   end if H1= infinity we will change to maxNumOfEdge that we know the other will led to it.
   therefore GBFS will give us optimal path.
 ### H2 is consistent beacause for every edge e we assume Capacity(e)=2 .
- <3,3,1>=18
- <3,2,0>,<2,2,0><3,1,0>=16
- <3,2,1>=14
- <2,1,0>,<3,0,0>=12
- <3,1,1>,<2,2,1>=10
- <2,0,0>,<1,1,0>=8
- <3,0,1>,<2,1,1>=6
- <1,0,0>=4
- <2,0,1>,<1,1,1>=2
- <0,0,0>=0
- <1,0,1>=1
- other:992
+####  <3,3,1>=18
+#### <3,2,0>,<2,2,0><3,1,0>=16
+#### <3,2,1>=14
+#### <2,1,0>,<3,0,0>=12
+#### <3,1,1>,<2,2,1>=10
+#### <2,0,0>,<1,1,0>=8
+#### <3,0,1>,<2,1,1>=6
+#### <1,0,0>=4
+#### <2,0,1>,<1,1,1>=2
+#### <0,0,0>=0
+#### <1,0,1>=1
+#### other:992
  beacause the edge is just between node who its h is not 992
  and for all line their neighbor can be or from one line befor or from one line after and the edge has 2 capaity this is consistance
  ## All the algorithm give a optimalic path.
