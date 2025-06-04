@@ -1,4 +1,4 @@
-# DecisionTreeImpl
+# DecisionTree
 ## In this class We use DTL algorithm for building the decision tree.
 ## Helper function:
 ### private double H(double[] p)-
